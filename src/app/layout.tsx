@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   title: "智能抠图 | 一键移除图片背景",
   description: "上传图片，立即获得背景移除效果，免费高效的AI抠图工具！",
   openGraph: {
-    images: "https://remove-bg.vercel.app/og.png",
+    images: "https://rmbg.hellokaton.me/og.png",
   },
 };
 
