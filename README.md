@@ -1,4 +1,4 @@
-# remove-bg - AI 智能图片背景移除工具 🖼️
+# remove-bg
 
 remove-bg 是一款AI赋能的现代化Web应用，基于 Next.js 构建，致力于提供极致简单、快速精准的在线图片背景移除服务。
 
