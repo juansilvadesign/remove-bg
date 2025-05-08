@@ -17,7 +17,6 @@ export default function Home() {
   >(null);
   const [processedImage, setProcessedImage] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState<boolean>(false);
-  const [progressPercentage, setProgressPercentage] = useState<number>(0);
 
   // 清理URL对象，防止内存泄漏
   useEffect(() => {
@@ -32,7 +31,6 @@ export default function Home() {
     try {
       // 清理之前的状态
       setIsLoading(false);
-      setProgressPercentage(0);
       if (processedImage && processedImage.startsWith("blob:")) {
         URL.revokeObjectURL(processedImage);
         setProcessedImage(null);
@@ -54,7 +52,6 @@ export default function Home() {
         // 处理图片
         const processedUrl = await processImageBackground(
           file,
-          setProgressPercentage,
         );
         setProcessedImage(processedUrl);
       } catch (e) {
@@ -77,7 +74,7 @@ export default function Home() {
   return (
     <div className="mx-auto max-w-3xl px-4">
       <div className="mx-auto mt-6 max-w-lg md:mt-10">
-        <h1 className="text-center text-4xl font-dingtalk font-bold md:text-5xl">
+        <h1 className="text-center font-dingtalk text-4xl font-bold md:text-5xl">
           智能移除图片背景
           <br /> 一键完成
         </h1>
@@ -98,9 +95,7 @@ export default function Home() {
           ) : (
             <>
               {/* 加载中 */}
-              {isLoading && (
-                <ProcessingLoader progressPercentage={progressPercentage} />
-              )}
+              {isLoading && <ProcessingLoader />}
 
               {/* 处理结果 */}
               {!isLoading && processedImage && originalImageDataUrl && (

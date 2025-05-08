@@ -17,10 +17,7 @@ export const fileToDataUrl = (file: File): Promise<string> => {
 };
 
 // 处理背景移除并返回处理后的URL
-export const processImageBackground = async (
-  file: File,
-  onProgress?: (percentage: number) => void,
-): Promise<string> => {
+export const processImageBackground = async (file: File): Promise<string> => {
   // 配置背景移除选项
   const config = {
     debug: true,
@@ -28,7 +25,6 @@ export const processImageBackground = async (
       // 显示进度
       const percentage = Math.round((current / total) * 100);
       console.log(`处理进度: ${key} ${percentage}%`);
-      onProgress?.(percentage);
     },
   };
 
