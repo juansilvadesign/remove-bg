@@ -6,7 +6,7 @@ remove-bg 是一款AI赋能的现代化Web应用，基于 Next.js 构建，致�
 
 ![remove-bg-preview](./public/og.png?t=1)
 
-预览地址: [待部署后添加]
+预览地址: https://rmbg.hellokaton.me
 
 ## ✨ 核心功能
 
