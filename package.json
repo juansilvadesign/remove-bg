@@ -1,0 +1,49 @@
+{
+  "name": "remove-bg",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "update:all": "pnpm update --interactive --latest"
+  },
+  "dependencies": {
+    "@imgly/background-removal": "^1.6.0",
+    "@radix-ui/react-label": "^2.1.6",
+    "@radix-ui/react-select": "^2.1.2",
+    "@radix-ui/react-slot": "^1.1.0",
+    "@radix-ui/react-toast": "^1.2.2",
+    "@tailwindcss/typography": "^0.5.16",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "dedent": "^1.5.3",
+    "lucide-react": "^0.503.0",
+    "nanoid": "^5.1.5",
+    "next": "15.3.1",
+    "next-plausible": "^3.12.4",
+    "react": "19.1.0",
+    "react-compare-slider": "^3.1.0",
+    "react-dom": "19.1.0",
+    "react-dropzone": "^14.3.5",
+    "sonner": "^2.0.3",
+    "tailwind-merge": "^2.5.4",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "eslint": "9.25.1",
+    "eslint-config-next": "15.3.1",
+    "postcss": "^8",
+    "prettier": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": "22.x"
+  }
+}
